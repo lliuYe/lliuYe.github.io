@@ -11,13 +11,13 @@
 	margin: 0px auto;
 }
 #h_left{
-	width: 30%;
+	width: 20%;
 	height: 100%;
 	background-color: #F58;
 	float: left;
 }
 #h_right{
-	width: 70%;
+	width: 80%;
 	height: 100%;
 	background-color: #0AD;
 	float: left;
@@ -28,13 +28,13 @@
 	margin: 0px auto;
 }
 #b_left{
-	width: 30%;
+	width: 20%;
 	height: 100%;
 	float: left;
 	background-color: #0AD;
 }
 #b_right{
-	width: 70%;
+	width: 80%;
 	height: 800px;
 	float: left;
 	background: #F58;
