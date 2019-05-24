@@ -2,43 +2,45 @@
 	width: 98%;
 	height: 1100px;
 	margin: 0px;
+
 }
 #head_01{
-	width: 100%;
+	width: 80%;
 	height: 200px;
 	background: #fff;
+	margin: 0px auto;
 }
 #h_left{
 	width: 30%;
 	height: 100%;
-	background-color: #f58;
+	background-color: #F58;
 	float: left;
 }
 #h_right{
 	width: 70%;
 	height: 100%;
-	background-color: #0ff;
+	background-color: #0AD;
 	float: left;
 }
 #body_01{
-	width: 100%;
+	width: 80%;
 	height: 800px;
-	margin: 0px;
+	margin: 0px auto;
 }
 #b_left{
 	width: 30%;
 	height: 100%;
 	float: left;
-	background-color: #0ff;
+	background-color: #0AD;
 }
 #b_right{
 	width: 70%;
 	height: 800px;
 	float: left;
-	background: #f58;
+	background: #F58;
 }
 #foot_01{
-	width: 70%;
+	width: 80%;
 	height: 100px;
-	float: right;
+	margin: 0 auto;
 }

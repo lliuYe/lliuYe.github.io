@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-24 20:36:38
+ * @version $Id$
+ */
+p{
+	text-indent: 2em;
+}
+a{
+	text-decoration: none;
+}
