@@ -12,5 +12,4 @@ window.onload = function() {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-    alert("测试代码");
 }
