@@ -38,9 +38,13 @@
 	height: 800px;
 	float: left;
 	background: #F58;
+	overflow-y: scroll;
 }
 #foot_01{
 	width: 80%;
 	height: 100px;
 	margin: 0 auto;
+}
+::-webkit-scrollbar{
+	display: none;
 }

@@ -8,18 +8,19 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="" rel="stylesheet">
+    <script type="text/javascript" src="../js/form.js"></script>
 </head>
 
 <body>
     <a href="../index.html">回到首页</a>
-    <form >
+    <form action="../php/index.php" method="get">
         <table>
             <tr>
                 <td>
                     <span>用户名</span>
                 </td>
                 <td>
-                    <input type="text" name="user_name">
+                    <input type="text" name="user_name" autofocus required placeholder="请输入用户名">
                 </td>
             </tr>
             <tr>
@@ -86,6 +87,17 @@
             </tr>
         </table>
     </form>
+    <label id="label">
+    	邮编：<input type="text" maxlength="6">
+    </label>
+    <input type="button" value="设置默认值" onclick="setValue()">
+    <br/>
+    <input type="text" name="study" list="subjects" autocomplete="">
+    <datalist id="subjects">
+    	<option value="HTML5学习">HTML5学习</option>
+    	<option value="Android学习">Android学习</option>
+    	<option value="iOS学习">iOS学习</option>
+    </datalist>
 </body>
 
 </html>
