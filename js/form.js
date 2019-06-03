@@ -10,3 +10,8 @@ function setValue(){
 	var us_name_value = us_td.control;
 	us_name_value.value = "ivan";
 }
+function AD(){
+	var control = document.getElementById("f2");
+	var Direction = control.selectionDirection;
+	alert(Direction);
+}
