@@ -66,15 +66,15 @@
                 </nav>
             </div>
             <div id="b_right">
-                <p>
-                    这将是叶家健的个人博客~
-                </p>
-                <p>
-                    这暂时是一个没有排版的网站 <--我莫得牌面-->
-                </p>
-                <p>通过article-object-embed修改内嵌界面的src来达到不更换界面更换显示内容</p>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <p>测试</p>
+                <div id="root">
+                    <div>
+        	            <input type="text" v-model="inputValue" />
+        	            <button @click="headleClick">提交</button>
+                    </div>
+                    <ul>
+                    <li v-for="(item,index) of list" :key="index">{{item}}</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="foot_01">
@@ -83,6 +83,21 @@
             </a>
         </div>
     </div>
+    <script>
+    new Vue({
+        el: "#root",
+        data: {
+            inputValue: "",
+            list:[]
+        },
+        methods:{
+        	headleClick: function(){
+        		this.list.push(this.inputValue)
+        		this.inputValue = ""
+        	}
+        }
+    })
+    </script>
 </body>
 
 </html>
