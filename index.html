@@ -74,11 +74,22 @@
             <div id="b_right">
                 <div id="root">
                     <div>
-        	            <input type="text" v-model="inputValue" />
-        	            <button @click="headleClick">提交</button>
+                        <input type="text" v-model="inputValue" />
+                        <button @click="headleClick">提交</button>
                     </div>
                     <ul>
-                    <li v-for="(item,index) of list" :key="index">{{item}}</li>
+                        <li v-for="(item,index) of list" :key="index">{{item}}</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="html/article.html">article</a></li>
+                        <li><a href="html/day1.html">第一天学习历程</a></li>
+                        <li><a href="html/form_01.html">表单</a></li>
+                        <li><a href="html/tb.html">表格</a></li>
+                        <li><a href="html/test.html">测试</a></li>
+                        <li><a href="html/time.html">时间</a></li>
+                        <li><a href="html/ul.html">列表</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,19 +101,19 @@
         </div>
     </div>
     <script>
-    new Vue({
-        el: "#root",
-        data: {
-            inputValue: "",
-            list:[]
-        },
-        methods:{
-        	headleClick: function(){
-        		this.list.push(this.inputValue)
-        		this.inputValue = ""
-        	}
-        }
-    })
+        new Vue({
+            el: "#root",
+            data: {
+                inputValue: "",
+                list: []
+            },
+            methods: {
+                headleClick: function () {
+                    this.list.push(this.inputValue)
+                    this.inputValue = ""
+                }
+            }
+        })
     </script>
 </body>
 
